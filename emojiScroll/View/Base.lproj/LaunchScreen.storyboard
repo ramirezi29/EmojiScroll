@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="mwi-up-9aA">
+            <objects>
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="Dzg-Jd-Dfw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U6c-1T-YFF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="iz2-by-gla">
+                                <rect key="frame" x="47" y="61" width="281" height="215"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Emoji Scroll" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFd-NE-4wU">
+                                        <rect key="frame" x="0.0" y="0.0" width="281" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="cool" translatesAutoresizingMaskIntoConstraints="NO" id="anY-o8-9U5">
+                                        <rect key="frame" x="0.0" y="87" width="281" height="128"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12594963910000001" green="0.6191506484" blue="0.87372554710000006" alpha="0.81820360430000005" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iz2-by-gla" firstAttribute="centerX" secondItem="olI-Rn-WwH" secondAttribute="centerX" id="1DX-0p-Pdz"/>
+                            <constraint firstItem="olI-Rn-WwH" firstAttribute="bottom" secondItem="iz2-by-gla" secondAttribute="bottom" constant="391" id="T3B-NR-q2A"/>
+                            <constraint firstItem="iz2-by-gla" firstAttribute="top" secondItem="olI-Rn-WwH" secondAttribute="top" constant="41" id="Yk4-UD-kD4"/>
+                            <constraint firstItem="iz2-by-gla" firstAttribute="width" secondItem="U6c-1T-YFF" secondAttribute="width" multiplier="0.75" id="n2n-fR-eDX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="olI-Rn-WwH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ror-SC-XRc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-101" y="367"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cool" width="400.69564819335938" height="400.69564819335938"/>
+    </resources>
+</document>
